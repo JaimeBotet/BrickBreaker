@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="src/styles.css">
+</head>
+<body>
+    <header>
+        <h1>Brick Breaker!</h1>
+    </header>
+    <div class="game_container">
+        <div class="game_header">
+            <p class="message_hidden">Be the fastest to destroy all the bricks!!!🎮🏓🔨🧱</p>
+        </div>
+        <div class="game_process">
+            <div class="game_intro">
+                <div class="flex__center">
+                    <div class="game__content">
+                        <h2 class="title__process">Choose a user name</h2>
+                        <label for="user">User name</label>
+                        <input type="text" name="username" id="name-text" autofocus>
+                        <input class="btn" type="button" value="Start" id="start-button">
+                    </div>
+                </div>
+            </div>
+            <div class="game_play" id="my_canvas_id">
+                <p>Your browser does not support canvas</p>
+            </div>
+            <div class="game_finish">
+                <div class="flex__center">
+                    <div class="game__content">
+                        <h2 class="title__process" id="final-message">You won! 🎉🎉🎉</h2>
+                        <p class="score-p">Your score is:  .</p>
+                        <input class="btn" id="restart-button" type="button" value="Play again">
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="game_scoring">
+            <div class="flex__center">
+                <div class="game__content">
+                    <h3>User Scores</h3>
+                    <div class="score__box">
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </div>
+    <script src="src/brickBreakMagic.js"></script>
+</body>
+</html>
